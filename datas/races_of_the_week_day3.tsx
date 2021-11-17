@@ -1,0 +1,52 @@
+export default {
+  races: [
+    {
+      race_course: "中山",
+      round: "11R",
+      race_name: "有馬記念",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "中山",
+      round: "12R",
+      race_name: "ホープフルS",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "京都",
+      round: "11R",
+      race_name: "天皇賞（春)",
+      course_type: "ダート",
+      length: 2200,
+      population: 999999,
+    },
+    {
+      race_course: "京都",
+      round: "12R",
+      race_name: "京都大賞典",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "小倉",
+      round: "11R",
+      race_name: "小倉記念",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "小倉",
+      round: "12R",
+      race_name: "小倉大賞典",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+  ],
+};

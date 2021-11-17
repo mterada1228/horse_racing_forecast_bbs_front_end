@@ -1,0 +1,52 @@
+export default {
+  races: [
+    {
+      race_course: "札幌",
+      round: "11R",
+      race_name: "札幌記念",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "札幌",
+      round: "12R",
+      race_name: "エルム賞",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "函館",
+      round: "11R",
+      race_name: "函館記念",
+      course_type: "ダート",
+      length: 2200,
+      population: 999999,
+    },
+    {
+      race_course: "函館",
+      round: "12R",
+      race_name: "函館スプリントS",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "福島",
+      round: "11R",
+      race_name: "七夕賞",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+    {
+      race_course: "福島",
+      round: "12R",
+      race_name: "福島記念",
+      course_type: "芝",
+      length: 1600,
+      population: 999999,
+    },
+  ],
+};
