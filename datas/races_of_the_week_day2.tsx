@@ -1,6 +1,7 @@
 export default {
   races: [
     {
+      race_id: 1,
       race_course: "札幌",
       round: "11R",
       race_name: "札幌記念",
@@ -9,6 +10,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 2,
       race_course: "札幌",
       round: "12R",
       race_name: "エルム賞",
@@ -17,6 +19,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 3,
       race_course: "函館",
       round: "11R",
       race_name: "函館記念",
@@ -25,6 +28,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 4,
       race_course: "函館",
       round: "12R",
       race_name: "函館スプリントS",
@@ -33,6 +37,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 5,
       race_course: "福島",
       round: "11R",
       race_name: "七夕賞",
@@ -41,6 +46,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 6,
       race_course: "福島",
       round: "12R",
       race_name: "福島記念",

@@ -1,6 +1,7 @@
 export default {
   races: [
     {
+      race_id: 1,
       race_course: "中山",
       round: "11R",
       race_name: "有馬記念",
@@ -9,6 +10,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 2,
       race_course: "中山",
       round: "12R",
       race_name: "ホープフルS",
@@ -17,6 +19,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 3,
       race_course: "京都",
       round: "11R",
       race_name: "天皇賞（春)",
@@ -25,6 +28,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 4,
       race_course: "京都",
       round: "12R",
       race_name: "京都大賞典",
@@ -33,6 +37,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 5,
       race_course: "小倉",
       round: "11R",
       race_name: "小倉記念",
@@ -41,6 +46,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 6,
       race_course: "小倉",
       round: "12R",
       race_name: "小倉大賞典",

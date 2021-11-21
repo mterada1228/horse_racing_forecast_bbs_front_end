@@ -12,6 +12,7 @@ import racesOftheWeekDay2 from "../datas/races_of_the_week_day2";
 import racesOftheWeekDay3 from "../datas/races_of_the_week_day3";
 
 type Race = {
+  race_id: number;
   race_course: string;
   round: string;
   race_name: string;

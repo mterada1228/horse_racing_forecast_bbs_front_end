@@ -1,6 +1,7 @@
 export default {
   races: [
     {
+      race_id: 1,
       race_course: "東京",
       round: "11R",
       race_name: "天皇賞(秋)",
@@ -9,6 +10,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 2,
       race_course: "東京",
       round: "12R",
       race_name: "3歳未勝利",
@@ -17,6 +19,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 3,
       race_course: "中京",
       round: "11R",
       race_name: "チャンピオンカップ",
@@ -25,6 +28,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 4,
       race_course: "中京",
       round: "12R",
       race_name: "新馬",
@@ -33,6 +37,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 5,
       race_course: "阪神",
       round: "11R",
       race_name: "宝塚記念",
@@ -41,6 +46,7 @@ export default {
       population: 999999,
     },
     {
+      race_id: 6,
       race_course: "阪神",
       round: "12R",
       race_name: "2勝クラス",
