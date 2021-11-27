@@ -14,10 +14,13 @@ const theme = createTheme({
       fontSize: "2.5rem",
     },
     h2: {
-      fontSize: "1.5625rem",
+      fontSize: "1.3rem",
     },
     h3: {
-      fontSize: "1.25rem",
+      fontSize: "1.1rem",
+    },
+    h4: {
+      fontSize: "0.8rem",
     },
   },
 });

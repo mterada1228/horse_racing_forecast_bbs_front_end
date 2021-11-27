@@ -15,10 +15,18 @@ type Props = {
   };
 };
 
+const MyCard = styled(Card)(() => ({
+  height: "150px",
+}));
+
 const MyCardHeader = styled(CardHeader)(({ theme }) => ({
   textAlign: "center",
   backgroundColor: theme.palette.primary.main,
   color: theme.palette.common.white,
+}));
+
+const MyCardContent = styled(CardContent)(() => ({
+  justifyContent: "center",
 }));
 
 const FeaturedRaceCard: FC<Props> = (props: Props) => {
@@ -26,9 +34,12 @@ const FeaturedRaceCard: FC<Props> = (props: Props) => {
 
   return (
     <Link href={`/race/${race.race_id}`} passHref>
-      <Card>
-        <MyCardHeader title={`${race.race_course} ${race.round}`} />
-        <CardContent>
+      <MyCard>
+        <MyCardHeader
+          title={`${race.race_course} ${race.round}`}
+          titleTypographyProps={{ variant: "h2" }}
+        />
+        <MyCardContent>
           <Grid container spacing={2}>
             <Grid item xs={6}>
               <Typography variant="h2">{race.race_name}</Typography>
@@ -39,8 +50,8 @@ const FeaturedRaceCard: FC<Props> = (props: Props) => {
               <Typography variant="h3">が予想中!</Typography>
             </Grid>
           </Grid>
-        </CardContent>
-      </Card>
+        </MyCardContent>
+      </MyCard>
     </Link>
   );
 };

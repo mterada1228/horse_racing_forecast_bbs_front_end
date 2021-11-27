@@ -1,5 +1,7 @@
 .footer {
-  margin-top: 3%;
+  width: 100%;
+  bottom: 0;
   background-color: #fff;
+  position: absolute;
   text-align: center;
 }
