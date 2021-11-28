@@ -8,6 +8,8 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+import { styled } from "@mui/system";
+import getGateNumberRowStyle from "../../utils/getGateNumberRowStyle";
 
 type Props = {
   horses: {
@@ -26,44 +28,55 @@ type Props = {
   }[];
 };
 
+const MyTableCell = styled(TableCell)(({ theme }) => ({
+  border: "1px solid",
+  borderColor: theme.palette.common.black,
+  textAlign: "center",
+}));
+
+const MyTableHead = styled(TableHead)(({ theme }) => ({
+  backgroundColor: theme.palette.background.default,
+}));
+
 const Entries: FC<Props> = (props) => {
   const { horses } = props;
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} sx={{ marginBottom: "3%" }}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
-        <TableHead>
+        <MyTableHead>
           <TableRow>
-            <TableCell>枠番</TableCell>
-            <TableCell>馬番</TableCell>
-            <TableCell>馬名</TableCell>
-            <TableCell>性齢</TableCell>
-            <TableCell>斤量</TableCell>
-            <TableCell>騎手</TableCell>
-            <TableCell>厩舎</TableCell>
-            <TableCell>馬体重</TableCell>
-            <TableCell>オッズ</TableCell>
-            <TableCell>人気</TableCell>
+            <MyTableCell>枠番</MyTableCell>
+            <MyTableCell>馬番</MyTableCell>
+            <MyTableCell>馬名</MyTableCell>
+            <MyTableCell>性齢</MyTableCell>
+            <MyTableCell>斤量</MyTableCell>
+            <MyTableCell>騎手</MyTableCell>
+            <MyTableCell>厩舎</MyTableCell>
+            <MyTableCell>馬体重</MyTableCell>
+            <MyTableCell>オッズ</MyTableCell>
+            <MyTableCell>人気</MyTableCell>
           </TableRow>
-        </TableHead>
+        </MyTableHead>
         <TableBody>
           {horses.map((horse, i) => (
-            <TableRow
-              key={i}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
+            <TableRow key={i}>
+              <MyTableCell
+                component="th"
+                scope="row"
+                style={getGateNumberRowStyle(horse.gate_number)}
+              >
                 {horse.gate_number}
-              </TableCell>
-              <TableCell>{horse.number}</TableCell>
-              <TableCell>{horse.name}</TableCell>
-              <TableCell>{`${horse.sex}${horse.age}`}</TableCell>
-              <TableCell>{horse.weight}</TableCell>
-              <TableCell>{horse.jockey}</TableCell>
-              <TableCell>{horse.stable}</TableCell>
-              <TableCell>{`${horse.horse_weight} (${horse.horse_weight_gain_or_loss})`}</TableCell>
-              <TableCell>{horse.odds}</TableCell>
-              <TableCell>{horse.popularity}</TableCell>
+              </MyTableCell>
+              <MyTableCell>{horse.number}</MyTableCell>
+              <MyTableCell>{horse.name}</MyTableCell>
+              <MyTableCell>{`${horse.sex}${horse.age}`}</MyTableCell>
+              <MyTableCell>{horse.weight}</MyTableCell>
+              <MyTableCell>{horse.jockey}</MyTableCell>
+              <MyTableCell>{horse.stable}</MyTableCell>
+              <MyTableCell>{`${horse.horse_weight} (${horse.horse_weight_gain_or_loss})`}</MyTableCell>
+              <MyTableCell>{horse.odds}</MyTableCell>
+              <MyTableCell>{horse.popularity}</MyTableCell>
             </TableRow>
           ))}
         </TableBody>

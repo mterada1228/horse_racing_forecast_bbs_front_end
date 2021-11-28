@@ -1,6 +1,18 @@
 import { FC } from "react";
-import { Button, TextareaAutosize, TextField } from "@mui/material";
+import {
+  Button,
+  FormControl,
+  Input,
+  InputLabel,
+  TextField,
+} from "@mui/material";
+import { styled } from "@mui/system";
 import useSendComment from "../../hooks/useSendCommnet";
+
+const MyFormControl = styled(FormControl)(() => ({
+  width: "50%",
+  marginBottom: "2%",
+}));
 
 const CommentForm: FC = () => {
   const { setName, setDescription, send } = useSendComment();
@@ -8,18 +20,29 @@ const CommentForm: FC = () => {
   return (
     <>
       <div>
-        <span>名前: </span>
-        <TextField required onChange={(e) => setName(e.target.value)} />
+        <MyFormControl variant="standard">
+          <InputLabel htmlFor="component-simple">名前</InputLabel>
+          <Input
+            id="component-simple"
+            onChange={(e) => setName(e.target.value)}
+          />
+        </MyFormControl>
       </div>
+
       <div>
-        <p>コメント: </p>
-        <TextareaAutosize
-          required
-          style={{ width: 200 }}
-          onChange={(e) => setDescription(e.target.value)}
-        />
+        <MyFormControl>
+          <TextField
+            label="コメント"
+            multiline
+            rows={4}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </MyFormControl>
       </div>
-      <Button onClick={send}>コメントの投稿</Button>
+
+      <Button variant="contained" onClick={send}>
+        コメントの投稿
+      </Button>
     </>
   );
 };
