@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Typography } from "@mui/material";
-import styles from "../../../styles/Footer.module.css";
+import styles from "./Footer.module.css";
 
 const Footer: FC = () => {
   return (

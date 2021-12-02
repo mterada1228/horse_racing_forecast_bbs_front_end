@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Card, Grid, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import styles from "../../../styles/commentCard.module.css";
+import styles from "./CommentCard.module.css";
 
 type Props = {
   comment: {
